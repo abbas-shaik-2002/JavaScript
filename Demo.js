@@ -28,8 +28,8 @@ const users = [
 ];
 
 // Calls
-allUsers(users);
-activeUsers(users);
-usersOlder18(users);
-avgAge(users);
-console.log("Active user names:", getActiveUserNames(users));
+allUsers(users)
+activeUsers(users)
+usersOlder18(users)
+avgAge(users)
+console.log("Active user names:", getActiveUserNames(users))
