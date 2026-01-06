@@ -7,16 +7,24 @@ const users = [
 
 
 const updateUserAge = (users, name, age)=>{
-    return users.map((user) => {
+    return users.map(user => {
         if(user.name===name){
-            return {...users, age : age}
+            return {...user, age : age}
         }
         return user
     })
 }
 
-
+const updateActive = (u, nam, sts) =>{
+    return u.map(user => {
+        if(user.name===nam){
+            return {...user, isActive : sts}
+        }
+        return user
+    })
+}
 
 const up = updateUserAge(users, "Asin", 18);
 console.log(up)
-console.log(users)
+const ua = updateActive(users, "Jehera", true)
+console.log(ua)
